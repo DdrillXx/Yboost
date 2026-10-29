@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CV et portfolio d'Ennyo Bori, étudiant en première année d'informatique.">
+  <title>Ennyo Bori | CV & Portfolio</title>
+
+  <!-- Bootstrap : styles et grille responsive -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Menu de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#accueil">ENNYO<span class="brand-dot">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projets">Projets</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-contact ms-lg-2" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Présentation principale -->
+    <section id="accueil" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7">
+            <span class="eyebrow"><span class="status-point"></span> Mon CV en ligne</span>
+            <p class="hero-intro mt-4 mb-2">Bonjour, je suis</p>
+            <h1>Ennyo <span>Bori.</span></h1>
+            <p class="hero-description mt-4">
+              Étudiant en <strong>première année d'informatique</strong>,
+              je découvre le développement web et je construis mes premiers projets.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-main" href="#projets">Découvrir mes projets <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline-custom" href="#contact">Me contacter</a>
+            </div>
+            <div class="hero-tags mt-5">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="avatar-background mx-auto" aria-label="Illustration avec les initiales EB">
+              <div class="avatar-circle">EB<span class="avatar-dot">.</span></div>
+              <div class="floating-label label-top">B1 Informatique</div>
+              <div class="floating-label label-bottom">Portfolio dynamique ✦</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="apropos" class="section-spacing section-white">
+      <div class="container">
+        <div class="row align-items-start gy-4">
+          <div class="col-lg-4">
+            <p class="section-label">01 / À PROPOS</p>
+            <h2>Quelques mots<br>sur moi<span class="heading-dot">.</span></h2>
+          </div>
+          <div class="col-lg-8">
+            <p class="about-text">
+              Je m'appelle <strong>Ennyo Bori</strong>. Je suis en B1 Informatique et
+              j'apprends à créer des sites web avec HTML, CSS et JavaScript.
+              J'aime comprendre comment fonctionne un site, améliorer son apparence
+              et découvrir de nouveaux outils.
+            </p>
+            <p class="about-secondary">
+              Ce portfolio a été réalisé dans le cadre d'un atelier de développement web.
+              Il me permet de présenter mes compétences et de montrer l'évolution
+              de mes projets au fil de ma formation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="section-spacing section-tinted">
+      <div class="container">
+        <p class="section-label">02 / COMPÉTENCES</p>
+        <h2>Ce que j'apprends<span class="heading-dot">.</span></h2>
+        <p class="section-subtitle">Des outils que je découvre et que je pratique en cours.</p>
+        <div class="row g-3 mt-4">
+          <div class="col-md-6 col-lg-4">
+            <article class="skill-card h-100"><div class="skill-icon">&lt;/&gt;</div><h3>HTML</h3><p>Structurer le contenu d'une page web.</p><span class="skill-tag">Structure</span></article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="skill-card h-100"><div class="skill-icon">#</div><h3>CSS</h3><p>Ajouter des couleurs et personnaliser le design.</p><span class="skill-tag">Design</span></article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="skill-card h-100"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Rendre les pages interactives et dynamiques.</p><span class="skill-tag">Interactivité</span></article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="skill-card h-100"><div class="skill-icon">B</div><h3>Bootstrap</h3><p>Créer un site adapté aux écrans de téléphone.</p><span class="skill-tag">Responsive</span></article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="skill-card h-100"><div class="skill-icon">⌘</div><h3>Git & GitHub</h3><p>Enregistrer et publier les versions du code.</p><span class="skill-tag">Versioning</span></article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <article class="skill-card h-100"><div class="skill-icon">DB</div><h3>Supabase</h3><p>Stocker mes projets dans une base de données.</p><span class="skill-tag">Données</span></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projets : chargés avec JavaScript -->
+    <section id="projets" class="section-spacing section-tinted">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3">
+          <div>
+            <p class="section-label">03 / RÉALISATIONS</p>
+            <h2>Mes projets<span class="heading-dot">.</span></h2>
+            <p class="section-subtitle mb-0">Les réalisations que je souhaite partager.</p>
+          </div>
+          <div>
+            <label for="filtre-projets" class="form-label small fw-semibold">Filtrer les projets</label>
+            <select id="filtre-projets" class="form-select" aria-label="Filtrer les projets par catégorie">
+              <option value="Tous">Toutes les catégories</option>
+              <option value="Web">Web</option>
+              <option value="École">École</option>
+              <option value="Personnel">Personnel</option>
+            </select>
+          </div>
+        </div>
+        <div id="chargement" class="py-5 text-center" role="status">
+          <div class="spinner-border text-primary" aria-hidden="true"></div>
+          <p class="mt-3 mb-0">Chargement des projets...</p>
+        </div>
+        <div id="liste-projets" class="row g-4 mt-3" aria-live="polite"></div>
+        <p id="info-donnees" class="data-info mt-4" role="status"></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-spacing contact-section">
+      <div class="container">
+        <div class="contact-box text-center">
+          <p class="section-label">04 / CONTACT</p>
+          <h2>On échange <span class="heading-dot">?</span></h2>
+          <p>Un projet, une question ou simplement envie de discuter de développement web ?</p>
+          <!-- Remplacer l'adresse ci-dessous par ta vraie adresse avant publication. -->
+          <a class="btn btn-main mt-3" href="mailto:ton.adresse@exemple.com">Envoyer un email <span aria-hidden="true">↗</span></a>
+          <p class="contact-note mt-3">Adresse email d'exemple à personnaliser dans index.html.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span>© 2026 Ennyo Bori</span>
+      <span>CV & Portfolio • Projet B1 Informatique</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap pour le menu mobile -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bibliothèque JavaScript Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Notre propre code JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

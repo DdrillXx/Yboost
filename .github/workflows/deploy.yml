@@ -1,0 +1,45 @@
+# Dès qu'on envoie une nouvelle version sur main,
+# GitHub publie automatiquement le site sur GitHub Pages.
+name: Publier mon portfolio
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "github-pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Récupérer les fichiers
+        uses: actions/checkout@v4
+
+      - name: Préparer GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Préparer les fichiers du site
+        run: |
+          mkdir site
+          cp index.html style.css script.js site/
+
+      - name: Envoyer les fichiers à GitHub Pages
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Mettre le site en ligne
+        id: deployment
+        uses: actions/deploy-pages@v4
